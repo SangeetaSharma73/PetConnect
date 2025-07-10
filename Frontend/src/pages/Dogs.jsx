@@ -20,7 +20,8 @@ const Dogs = () => {
   useEffect(() => {
     // Fetch dog data from API
     axios
-      .get("http://localhost:8000/api/animals")
+      // .get("http://localhost:8000/api/animals")
+      .get("https://petconnect-6hra.onrender.com/api/animals")
       .then((response) => {
         setDogList(response.data);
         setFilteredList(response.data); // Initially set filtered list to all dogs

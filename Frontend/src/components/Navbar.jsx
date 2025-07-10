@@ -194,7 +194,8 @@ export const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:8000/api/auth/logout", {
+      // await fetch("http://localhost:8000/api/auth/logout", {
+      await fetch("https://petconnect-6hra.onrender.com/api/auth/logout", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

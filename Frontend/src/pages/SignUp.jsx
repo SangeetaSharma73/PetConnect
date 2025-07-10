@@ -15,8 +15,8 @@ export const SignUp = () => {
   const onSubmit = async (data) => {
     try {
       const response = await fetch(
-        // "https://learnjavascript.onrender.com/api/auth/signup",
-        "http://localhost:8000/api/auth/signup",
+        // "https://petconnect-6hra.onrender.com/api/auth/signup",
+        // "http://localhost:8000/api/auth/signup",
         {
           method: "POST",
           headers: {

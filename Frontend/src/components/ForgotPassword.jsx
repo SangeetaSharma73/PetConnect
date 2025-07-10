@@ -14,8 +14,8 @@ export const ForgotPassword = () => {
   const onSubmit = async (data) => {
     try {
       const response = await fetch(
-        // "https://learnjavascript.onrender.com/api/auth/forgot-password",
-        "http://localhost:8000/api/auth/forgot-password",
+        "https://petconnect-6hra.onrender.com/api/auth/forgot-password",
+        // "http://localhost:8000/api/auth/forgot-password",
         {
           method: "POST",
           headers: {
