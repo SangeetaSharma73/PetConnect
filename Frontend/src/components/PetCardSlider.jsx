@@ -1,0 +1,88 @@
+import React from "react";
+
+export const PetCardSlider = ({ items }) => {
+  return (
+    <>
+      <div className="m-0 p-0">
+        <div className="carousel w-full">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              id={`slide${index + 1}`}
+              className="carousel-item relative w-full"
+            >
+              <img
+                src={item.photo}
+                alt={item.name}
+                className="w-full object-cover h-[480px]"
+              />
+
+              {/* Optional: You can add some text or buttons here */}
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {/* <div className="m-0 p-0">
+        <div className="carousel w-full">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0817/1687/1489/t/2/assets/67eafc3165c3e_image_1743453233.png?v=1743453234"
+              className="w-full"
+            />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide2" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0817/1687/1489/t/2/assets/67eafa85b4e82_image_1743452805.png?v=1743452808"
+              className="w-full"
+            />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide3" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+              className="w-full"
+            />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide4" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+              className="w-full"
+            />
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" className="btn btn-circle">
+                ❮
+              </a>
+              <a href="#slide1" className="btn btn-circle">
+                ❯
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> */}
+    </>
+  );
+};
